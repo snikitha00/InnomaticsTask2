@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Directory Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Company Directory Portal</h1>
+    </header>
+
+    <section class="registration-form">
+        <h2>Employee Registration</h2>
+        <form id="employeeForm">
+            <input type="text" placeholder="Full Name" required>
+            <input type="email" placeholder="Email" required>
+            <select required>
+                <option value="" disabled selected>Select Department</option>
+                <option value="HR">HR</option>
+                <option value="Engineering">Engineering</option>
+                <option value="IT">Sales</option>
+                <option value="Marketing">Marketing</option>
+            </select>
+            <input type="number" placeholder="Employee ID" required>
+            <input type="url" placeholder="Profile Picture URL" required>
+            <button type="submit">Register Employee</button>
+        </form>
+    </section>
+
+    <section class="employee-list">
+        <h2>Registered Employees</h2>
+        <ol id="employeeList">
+            <li>John Doe - john@example.com</li>
+            <li>Jane Smith - jane@example.com</li>
+        </ol>
+    </section>
+
+    <section class="employee-details">
+        <h2>Employee Details</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Employee ID</th>
+                    <th>Department</th>
+                    <th>Profile Picture</th>
+                </tr>
+            </thead>
+            <tbody id="employeeDetailsBody">
+                <tr>
+                    <td>John Doe</td>
+                    <td>12345</td>
+                    <td>IT</td>
+                    <td><img src="https://via.placeholder.com/50" alt="img"></td>
+                </tr>
+                <tr>
+                    <td>Jane Smith</td>
+                    <td>67890</td>
+                    <td>HR</td>
+                    <td><img src="https://via.placeholder.com/50" alt="img"></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section class="map">
+        <h2>Company Location</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15220.786992835068!2d78.390139!3d17.498119!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb91f155c4e017%3A0xcd85d9af040f977d!2sFortune%20Signature%2C%20Mumbai%20Hwy%2C%20Sardar%20Patel%20Nagar%2C%20IDPL%20Staff%20Cooperative%20Housing%20Society%2C%20Kukatpally%20Housing%20Board%20Colony%2C%20Kukatpally%2C%20KPHB%202%2C%20Hyderabad%2C%20Telangana%20500072%2C%20India!5e0!3m2!1sen!2sus!4v1727608018925!5m2!1sen!2sus" width="1000" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+</body>
+</html>
